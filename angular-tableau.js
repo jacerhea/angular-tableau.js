@@ -14,7 +14,7 @@
        attributes on the directive). Not sure which one you need? Try the height setting first.
 */
 
-angular.module("angular-tableau", [])
+angular.module('angular-tableau', [])
   .value('tableau', tableau)
   .directive('tableauViz', ['$q', '$interval', 'tableau', function ($q, $interval, tableauApi) {
     return {
